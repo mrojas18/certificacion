@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+    php-httpd:
+        build: .
+        ports:
+            - 81:80
+        volumes:
+            - "./:/var/www/html"
+
+
